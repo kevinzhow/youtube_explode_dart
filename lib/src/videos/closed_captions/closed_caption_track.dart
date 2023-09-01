@@ -9,11 +9,11 @@ part 'closed_caption_track.g.dart';
 @JsonSerializable()
 class ClosedCaptionTrack {
   /// Closed captions.
-  final UnmodifiableListView<ClosedCaption> captions;
+  final List<ClosedCaption> captions;
 
   /// Initializes an instance of [ClosedCaptionTrack].
   ClosedCaptionTrack(Iterable<ClosedCaption> captions)
-      : captions = UnmodifiableListView(captions);
+      : captions = captions.toList();
 
   /// Gets the caption displayed at the specified point in time.
   /// Returns null if not found.
