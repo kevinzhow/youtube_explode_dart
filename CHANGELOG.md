@@ -1,3 +1,9 @@
+## 2.0.3
+- Better performance for iterating through closed captions elements. #251
+- Add publishDate and viewCount for playlists. #240
+- Fix fetching of YT music playlists. #261
+- Fix like count extraction.
+
 ## 2.0.2
 - Implement YT Handles.
 - Deprecated ChannelLink icon's uri, they are no longer provided by YT.
